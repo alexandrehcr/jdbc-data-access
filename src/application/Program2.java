@@ -13,9 +13,10 @@ public class Program2 {
 //        departmentDao.insert(department);
 //        System.out.println("Inserted! New department id = " + department.getId() + ".");
 
-        System.out.println("===== TEST 2: DepartmentDaoJDBC::update =====");
         // TODO: Test after implement findById()
+//        System.out.println("===== TEST 2: DepartmentDaoJDBC::update =====");
 
-        
+        System.out.println("===== TEST 3: DepartmentDaoJDBC::deleteById =====");
+        departmentDao.deleteById(6);
     }
 }
