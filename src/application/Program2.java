@@ -8,9 +8,14 @@ public class Program2 {
     public static void main(String[] args) {
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
-        System.out.println("===== TEST 1: DepartmentDaoJDBC::insert =====");
-        Department department = new Department(null, "Engineering");
-        departmentDao.insert(department);
-        System.out.println("Inserted! New department id = " + department.getId() + ".");
+//        System.out.println("===== TEST 1: DepartmentDaoJDBC::insert =====");
+//        Department department = new Department(null, "Engineering");
+//        departmentDao.insert(department);
+//        System.out.println("Inserted! New department id = " + department.getId() + ".");
+
+        System.out.println("===== TEST 2: DepartmentDaoJDBC::update =====");
+        // TODO: Test after implement findById()
+
+        
     }
 }
