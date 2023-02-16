@@ -27,16 +27,22 @@ public class Program {
         list = sellerDao.findAll();
         list.forEach(System.out::println);
 
-        System.out.println("\n===== TEST 4: SellerDao::insert =====");
-        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", LocalDate.now(), 4000.0, department);
-        sellerDao.insert(newSeller);
-        System.out.println("Inserted! New seller id = " + newSeller.getId() + "\n");
+//        System.out.println("\n===== TEST 4: SellerDao::insert =====");
+//        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", LocalDate.now(), 4000.0, department);
+//        sellerDao.insert(newSeller);
+//        System.out.println("Inserted! New seller id = " + newSeller.getId() + "\n");
+//
+//        System.out.println("\n===== TEST 5: SellerDao::update =====");
+//        seller = sellerDao.findById(1);
+//        seller.setName("Martha Wayne");
+//        seller.setEmail("marthaW@gmail.com");
+//        sellerDao.update(seller);
+//        System.out.println("Seller updated.");
 
-        System.out.println("\n===== TEST 5: SellerDao::update =====");
-        seller = sellerDao.findById(1);
-        seller.setName("Martha Wayne");
-        seller.setEmail("marthaW@gmail.com");
-        sellerDao.update(seller);
-        System.out.println("Seller updated.");
+
+        System.out.println("\n===== TEST 6: SellerDao::deleteById =====");
+        sellerDao.deleteByID(8);
+        sellerDao.deleteByID(10);
+        System.out.println("Finish deleting process.");
     }
 }
